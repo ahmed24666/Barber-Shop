@@ -1,0 +1,93 @@
+.Section1{
+    display: flex;
+    @media (max-width:1050px) {
+        flex-direction: column;
+    }
+    .left{
+        flex: 1;
+        padding: 100px;
+        background-color: var(--b2);
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        @media (max-width:1050px) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        p{color: var(--pale);font-size: 17px;}
+        h1{
+            font-size: 70px;
+        }
+        .main-head{
+            align-items: start !important;
+            @media (max-width:1050px) {
+                align-items: center !important;
+            }
+        }
+    }
+    .right{
+        @media (max-width:1050px) {
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        padding: 100px;
+        flex: 1;
+        background-image: url('./../../../public/images/header/home1-bg1.jpg');
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            @media (max-width:1050px) {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            hr{
+                width: 20%;
+
+            }
+            .icon{
+                color: var(--scolor);
+                transition: 0.5s;
+                &:hover{
+                    color: var(--w);
+                }
+            }
+            .top{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                font-size: 30px;
+                font-weight: 300 !important;
+                color: var(--w);
+                letter-spacing: 2px;
+            }
+            .direction{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                font-size: 15px;
+                font-family: var(--f);
+                font-weight: 600;
+                color: var(--mcolor);
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    color: var(--w);
+                }
+                .icon{
+                    color: var(--mcolor);
+                    font-size: 20px !important;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.Slider1st{
+    padding: 100px;
+    @media (max-width:950px) {
+        padding: 30px;
+    }
+    .cards{
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
+        .card{
+            background-color: var(--b1);
+            min-width: 320px;
+            height: 340px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            text-align: center;
+            @media (max-width:950px) {
+                min-width: 230px;
+                height: 230px;
+                gap: 15px;
+            }
+            .icon{
+                font-size: 50px;
+                color:var(--scolor) ;
+            }
+            h1{
+                font-weight: 600;
+                color:var(--w) ;
+            }
+            .more{
+                display: flex;
+                font-size: 25px;
+                color: var(--mcolor);
+                letter-spacing: 2px;
+                transition: 0.5s;
+                &:hover{
+                    color:var(--w);
+                }
+                h5{
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .btns{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn{
+            font-size: 35px;
+            color: var(--mcolor);
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                color: var(--w);
+            }
+        }
+    }
+}

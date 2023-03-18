@@ -1,0 +1,48 @@
+.AOT{
+    display: flex;
+    padding: 100px;
+    gap: 30px;
+    direction: rtl;
+    @media (max-width:1050px) {
+        flex-direction: column;
+    }
+    @media (max-width:900px) {
+        padding: 50px;
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: end !important;
+        text-align: end;
+        @media (max-width:1050px) {
+            align-items: center !important;
+            text-align: center; 
+        }
+        .main-head{
+            align-items: end !important;
+            text-align: end;
+            @media (max-width:1050px) {
+                align-items: center !important;
+                text-align: center;   
+            }
+            h1{
+                font-size: 70px;
+            }
+        }
+    }
+    .left{
+        flex: 2;
+        .image{
+            width: 100%;
+            max-height: 450px;
+            img{
+                width: 100%;
+                max-height:450px ;
+                object-fit: cover;
+            }
+        }
+    }
+}

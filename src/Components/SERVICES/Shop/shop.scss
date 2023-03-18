@@ -1,0 +1,45 @@
+.Shop{
+    padding: 100px;
+    @media (max-width:950px) {
+        padding: 30px;
+    }
+    .cards{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            background-color: var(--b3);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            width: 200px;
+            @media (max-width:1050px) {
+                width: 300px;
+            }
+            .image{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            h1{
+                color: var(--w);
+                line-height: 35px;
+            }
+            p{
+            
+            }
+            h3{
+                color: var(--mcolor);
+                font-size: 23px;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

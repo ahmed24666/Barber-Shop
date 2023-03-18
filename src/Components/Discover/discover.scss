@@ -1,0 +1,67 @@
+.Discover{
+    display: flex;
+    background-color: var(--b1);
+    padding: 100px 0;
+    direction: rtl;
+    @media (max-width:950px) {
+        flex-direction: column;
+    }
+    .left{
+        flex: 2;
+        max-width: 67%;
+        @media (max-width:950px) {
+            min-width: 100%;
+            padding-top: 20px;
+        }
+        .imageCon{
+            width: 100%;
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            scrollbar-width: none;
+            gap: 20px;
+            .image{
+                min-width: 400px;
+                height: 400px;
+                @media (max-width:767px) {
+                    min-width: 300px;
+                    height: 300px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .main-head{
+            text-align: center;
+        }
+        h1{
+            font-size: 70px;
+        }
+        flex: 1;
+        padding: 0 50px;
+        .btns{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 35px;
+            color: var(--w);
+            .btn{
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    color: var(--mcolor);
+                }
+            }
+        }
+    }
+}

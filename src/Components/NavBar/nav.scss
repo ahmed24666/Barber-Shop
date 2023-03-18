@@ -1,0 +1,80 @@
+.Nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    a.active{
+        color: var(--mcolor);
+    }
+    .left{
+        .image{
+            width: 120px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .right{
+        font-family: var(--f);
+        font-size: 17px;
+        display: flex;
+        gap: 30px;
+        color: var(--w);
+        @media (max-width:950px) {
+            flex-direction: column;
+        }
+        .menu{
+            transition: 0.5s;
+            display: none;
+            color: var(--w);
+            cursor: pointer;
+            font-size: 35px;
+            &:hover{
+                color: var(--mcolor);
+            }
+            @media (max-width:950px) {
+                display: block;
+            }
+        }
+        .list{
+            transition: 0.5s;
+            &:hover{
+                color: var(--mcolor);
+            }
+            @media (max-width:950px) {
+            display: none;
+            }
+        }
+        .hide{
+            position: fixed;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height:100vh;
+            background-color: var(--b1);
+            top: 0;
+            left: 0;
+            justify-content: center;
+            margin: auto 0;
+            text-align: center;
+            font-size: 30px;
+            overflow-y: hidden;
+            @media (min-width:951px) {
+                display: none;
+                }
+            .list1{
+                transition: 0.5s;
+                &:hover{
+                    color: var(--mcolor);
+                }
+                
+            }
+        }
+    }
+}

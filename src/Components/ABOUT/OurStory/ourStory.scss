@@ -1,0 +1,54 @@
+.OurStory{
+    display: flex;
+    gap: 30px;
+    padding: 100px;
+    @media (max-width:1050px) {
+        flex-direction: column;
+    }
+    @media (max-width:950px) {
+        padding: 30px;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width:1050px) {
+            text-align: center;
+        }
+        .main-head{
+            align-items: start;
+            @media (max-width:1050px) {
+                align-items: center;
+            }
+            h1{
+                font-size: 70px;
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            @media (max-width:1050px) {
+                justify-content: center;
+                align-items: center;
+            }
+            .button{
+                width: 80px;
+                height: 60px;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    .right{
+        flex: 2;
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

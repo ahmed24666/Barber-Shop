@@ -1,0 +1,68 @@
+.VHeader{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .cardContainer{
+        width: 300vw;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        transition: 2s ease;
+        position: relative;
+        .card{
+            width: 100vw;
+            height: 100%;
+            position: relative;
+            .image{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text{
+                margin:0 auto;
+                right: 0;
+                left: 0;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 70%;
+                bottom: 50%;
+                transform: translateY(50%);
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: var(--w);
+                    font-family: var(--f);
+                    font-size: 19px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .btns{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 50%;
+        transform: translateY(50%);
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        color: var(--w);
+        font-size: 40px;
+        .btn{
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                color: var(--mcolor);
+            }
+        }
+    }
+}

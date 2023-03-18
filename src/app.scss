@@ -1,0 +1,120 @@
+:root {
+  --fh: "Teko", sans-serif;
+  --f: "Montserrat", sans-serif;
+  --mcolor: #96885f;
+  --scolor: #70927b;
+  --pale: #8d8d8d;
+  --b1: #252525;
+  --b2: #2c2c2c;
+  --b3: #323232;
+  --w: #e1e1e1;
+}
+.app {
+  .no {
+    opacity: 1 !important;
+  }
+  .scrollToTop {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--mcolor);
+    background-color: var(--b3);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 990;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    color: var(--mcolor);
+    &:hover {
+      background-color: var(--mcolor);
+    }
+    &:hover a {
+      color: var(--b3);
+    }
+    @media (max-width: 767px) {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 25px;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    font-family: var(--fh);
+  }
+  .button {
+    width: 250px;
+    height: 70px;
+    border: 5px solid var(--mcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--w);
+    font-size: 22px;
+    font-family: var(--fh);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      background-color: var(--mcolor);
+    }
+  }
+  hr {
+    background-color: var(--w);
+    border: none;
+    height: 1px;
+  }
+  .para {
+    font-family: var(--f);
+    letter-spacing: 1px;
+    color: var(--pale);
+    font-size: 17px;
+  }
+  .main-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 100px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: var(--fh);
+      color: var(--mcolor);
+      line-height: 70px;
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font-size: 90px;
+      }
+      span {
+        color: var(--w);
+      }
+    }
+    hr {
+      background-color: var(--w);
+      width: 20%;
+      height: 1px;
+    }
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

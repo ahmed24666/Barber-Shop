@@ -1,0 +1,117 @@
+.Progress{
+    display: flex;
+    gap: 50px;
+    @media (max-width:900px) {
+        flex-direction: column;
+    }
+    .left{
+        flex: 1;
+        padding: 50px 0 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width:900px) {
+            padding: 30px;
+        }
+        .main-head{
+            align-items: start;
+            @media (max-width:900px) {
+                align-items: center;
+                text-align: center;
+            }
+            h1{
+                font-size: 70px;
+                width: 80%;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: space-between;
+            h3{
+                color: white;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            h4{
+                color: var(--mcolor);
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+        .progress1{
+            width: 100%;
+            height: 15px;
+            background-color: var(--b1);
+            border-radius: 5px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 82%;
+                height: 100%;
+                border-radius: 5px;
+                background-color: var(--mcolor);
+                position: absolute;
+                top: 0;
+                z-index: 3;
+            }
+        }
+        .progress2{
+            width: 100%;
+            height: 15px;
+            background-color: var(--b1);
+            border-radius: 5px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 94%;
+                height: 100%;
+                border-radius: 5px;
+                background-color: var(--mcolor);
+                position: absolute;
+                top: 0;
+                z-index: 3;
+            }
+        }
+        .progress3{
+            width: 100%;
+            height: 15px;
+            background-color: var(--b1);
+            border-radius: 5px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 87%;
+                height: 100%;
+                border-radius: 5px;
+                background-color: var(--mcolor);
+                position: absolute;
+                top: 0;
+                z-index: 3;
+            }
+        }
+        
+    }
+    .right{
+        flex: 1;
+        min-width: 50%;
+        @media (max-width:900px) {
+            display: flex;
+            justify-content: center;align-items: center;
+            margin-bottom: 30px;
+        }
+        .image{
+            height:100%;
+            @media (max-width:900px) {
+                max-height: 400px;
+                max-width: 600px;
+                overflow-y: hidden;
+            }
+            img{
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

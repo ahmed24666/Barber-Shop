@@ -1,0 +1,40 @@
+.Logos{
+    position: relative;
+    @media (max-width:500px) {
+        height: 550px;
+    }
+    .image{
+        width: 100%;
+        height: 335px;
+        @media (max-width:500px) {
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .images{
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        padding:0 50px;
+        bottom: 50%;
+        transform: translateY(50%);
+        gap: 30px;
+        @media (max-width:950px) {
+            flex-wrap: wrap;
+        }
+        img{
+            width: 200px;
+            @media (max-width:800px) {
+                width: 120px;
+            }
+        }
+    }
+}

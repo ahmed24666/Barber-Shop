@@ -1,0 +1,96 @@
+.WhyChoose{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    @media (max-width:1050px) {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+    .hide{
+        position: fixed;
+        width: 100%;
+        height: 120vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: -100px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0 ; 
+        gap: 20px;
+        iframe{
+            width: 700px !important;
+            height: 400px;
+            @media (max-width:1050px) {
+                width: 300px;
+                height: 300px;
+            }
+            @media (max-width:767px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .button{
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+        }
+    }
+    .left{
+        flex: 1;
+        position: relative;
+        min-width: 50%;
+        .image{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .button{
+            position: absolute;
+            font-size: 40px;
+            width: 90px;
+            height: 90px;
+            bottom: 50%;
+            transform: translateY(50%);
+            left: 0;
+            right: 0;
+            margin:0 auto;
+        }
+    }
+    .right{
+        padding: 50px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        @media (max-width:1050px) {
+            text-align: center;
+            align-items: center;
+        }
+        .main-head{
+            width: 30%;
+            align-items: start;
+            @media (max-width:1050px) {
+                align-items: center;
+                width: 100%;
+            }
+            h1{
+                font-size: 70px;
+            }
+
+        }
+        p{
+            width:70%;
+            @media (max-width:1050px) {
+                width: 95%;
+            }
+        }
+    }
+}

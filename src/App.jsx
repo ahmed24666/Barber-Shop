@@ -24,12 +24,11 @@ function App() {
       }
     }
     window.addEventListener('scroll', show)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     useEffect(() => {
-      setLoading(true)
       setTimeout(() => {
         setLoading(false)
-      }, 4000);
+      }, 2500);
     }, [])
     return (
       <div className="app">
